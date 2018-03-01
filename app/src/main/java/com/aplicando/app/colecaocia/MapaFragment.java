@@ -3,13 +3,13 @@ package com.aplicando.app.colecaocia;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
-
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
 import java.util.List;
@@ -34,6 +34,11 @@ public class MapaFragment extends SupportMapFragment implements OnMapReadyCallba
             CameraUpdate update = CameraUpdateFactory.newLatLngZoom(posicaoEmpresa, 19);
             googleMap.moveCamera(update);
         }
+
+        MarkerOptions marcador = new MarkerOptions();
+        marcador.position(posicaoEmpresa);
+        marcador.title("Coleção & Cia");
+        googleMap.addMarker(marcador);
     }
 
     private LatLng pegaCoordenadadoEndereco(String endereco) {
