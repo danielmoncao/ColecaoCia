@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         botaolocalizacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+                startActivity(new Intent(MainActivity.this, MapaActivity.class));
             }
         });
 
