@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imagelogo"
         android:layout_width="match_parent"
-        android:layout_height="166dp"
+        android:layout_height="180dp"
         app:srcCompat="@drawable/logo01"
         tools:ignore="ContentDescription" />
 

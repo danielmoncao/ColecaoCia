@@ -31,7 +31,7 @@ public class MapaFragment extends SupportMapFragment implements OnMapReadyCallba
     public void onMapReady(GoogleMap googleMap) {
         LatLng posicaoEmpresa = pegaCoordenadadoEndereco("Rua quatorze de julho 24A são joaquim Araçatuba São Paulo");
         if (posicaoEmpresa != null) {
-            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(posicaoEmpresa, 19);
+            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(posicaoEmpresa, 23);
             googleMap.moveCamera(update);
         }
 
