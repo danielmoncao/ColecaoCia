@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">ColecaoeCia</string>
+    <string name="app_name">Colecao&amp;Cia</string>
     <string name="title_activity_maps">Map</string>
+    <string name="fale_conosco">Fale Conosco</string>
+    <string name="teste">teste</string>
+
 </resources>

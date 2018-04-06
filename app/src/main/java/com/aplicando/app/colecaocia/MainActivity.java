@@ -1,12 +1,14 @@
 package com.aplicando.app.colecaocia;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     //criando os botoes
     private ImageView botaoWeb;
     private ImageView botaoMusculacao;
-    private ImageView botaoGinastica;
+    private ImageView botaoEmail;
     private ImageView botaolocalizacao;
 
     @Override
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //localizando os botoes
         botaoWeb = (ImageView) findViewById(R.id.imageView);
         botaoMusculacao = (ImageView) findViewById(R.id.imageView2);
-        botaoGinastica = (ImageView) findViewById(R.id.imageView3);
+        botaoEmail = (ImageView) findViewById(R.id.imageView3);
         botaolocalizacao = (ImageView) findViewById(R.id.imageView4);
 
 
@@ -48,12 +50,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //instanciando oo botao ginastica
-        botaoGinastica.setOnClickListener(new View.OnClickListener() {
+        //instanciando oo botao email
+        botaoEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Tela03.class));
-            }
+
+                try {
+
+
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"flaviodepaulo99@gmail.com"});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
+                intent.putExtra(Intent.EXTRA_TEXT, "Escrever Mensagem");
+                intent.setType("massage/efc822");
+                startActivity(intent);
+
+            }catch (ActivityNotFoundException anfe) {
+                Toast.makeText(MainActivity.this, "Esse email não foi encontrado", Toast.LENGTH_LONG).show();
+                }}
         });
 
         //instanciando oo botao localizacao
