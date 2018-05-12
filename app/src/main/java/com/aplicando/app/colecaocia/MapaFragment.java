@@ -14,10 +14,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by User on 01/03/2018.
- */
-
 public class MapaFragment extends SupportMapFragment implements OnMapReadyCallback {
 
     @Override

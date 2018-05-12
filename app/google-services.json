@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699580862628",
+    "firebase_url": "https://carroscia-202113.firebaseio.com",
+    "project_id": "carroscia-202113",
+    "storage_bucket": "carroscia-202113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699580862628:android:a6f697b03ac741f9",
+        "android_client_info": {
+          "package_name": "com.aplicando.app.colecaocia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699580862628-8a1vndggqq0j3bsqbfsq2q3dl5qm8i72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aplicando.app.colecaocia",
+            "certificate_hash": "c260fcd0587319196a399e9be816bc60ec5320dd"
+          }
+        },
+        {
+          "client_id": "699580862628-knhglji904b4f2kdksjaspumkeo3od8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzfmvtQ7VpUGSLHQUP7W09lg2V29-fvUw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699580862628-knhglji904b4f2kdksjaspumkeo3od8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

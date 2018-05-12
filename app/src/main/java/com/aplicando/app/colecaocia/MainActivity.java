@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         botaolocalizacao = (ImageView) findViewById(R.id.imageView4);
 
 
-        //instanciando oo botao web
+        //instanciando o botao web
         botaoWeb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //instanciando oo botao musculacao
+        //instanciando o botao musculacao
         botaoMusculacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,14 +50,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //instanciando oo botao email
+        //instanciando o botao email
         botaoEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 try {
-
-
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"flaviodepaulo99@gmail.com"});
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
@@ -70,13 +68,12 @@ public class MainActivity extends AppCompatActivity {
                 }}
         });
 
-        //instanciando oo botao localizacao
+        //instanciando o botao localizacao
         botaolocalizacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MapaActivity.class));
             }
         });
-
     }
 }

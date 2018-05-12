@@ -42,7 +42,11 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".MapaActivity" />
-        <activity android:name=".EmailActivity"></activity>
+        <activity android:name=".EmailActivity"/>
+
+
+
+
     </application>
 
 </manifest>

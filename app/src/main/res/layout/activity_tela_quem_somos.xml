@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.aplicando.app.colecaocia.TelaQuemSomos">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5">
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="30dp"
+
+            android:text="Quer dar um presente bacana para um entusiasta sem gastar muito? Dê a ele um ou dois Hot Wheels. Sério. Eles custam entre R$ 7 e R$ 10 e podem ser encontrados em qualquer lugar. Dia desses fui a uma farmácia e levei um Mazda RX-7 azul para casa, feliz da vida. Sim, um marmanjo com barba na cara. Mas atente-se
+\a um detalhe importante: precisa ser um carro que existe de verdade. Aliás, as últimas séries de Hot Wheels andam bem legais, com vários modelos detalhados, com faróis, lanternas e emblemas pintados.
+\O caso é que os Hot Wheels completaram exatos 50 anos no último dia 4 de janeiro. Eles foram lançados em 1968 pela Mattel, que na época já era uma empresa gigantesca, mas tirava praticamente todo o seu lucro das bonecas Barbie.
+A ideia era competir com os Matchbox, carrinhos em escala 1:64 lançados pela britânica Lesney Products em 1946 que tinham como principais atrativos o baixo preço, a fidelidade na reprodução das linhas dos carros de verdade e a embalagem em formato de caixa, de onde vinha o nome Matchbox (“caixinha de fósforos” em tradução literal”).
+\Como vendiam feito água, era natural que outras empresas quisessem uma fatia do bolo.
+\No caso da Mattel, a iniciativa partiu de Elliot Handler, co-fundador da empresa, que achava um absurdo o fato de os carrinhos mais vendidos nos Estados Unidos serem fabricados na Inglaterra. Seus executivos de marketing julgaram a ideia equivocada e precipitada, mas eles não imaginavam que Handler estava fazendo tudo direitinho.
+Para ele, uma forma de atrair os garotos para as prateleiras das lojas de brinquedos era criar carros mais divertidos, apostando menos no realismo e mais nas cores brilhantes e designs originais.
+\O fato de serem mais coloridos e modificados que os Matchbox fez dos Hot Wheels um sucesso instantâneo. Mas havia outra característica que os Matchbox não tinha: as rodas com baixíssima fricção, sem buchas de borracha – apenas plástico rígido e liso em um eixo de metal. Já em 1969 era notável que as crianças preferiam os Hot Wheels,
+\e a Mattel logo tratou de apresentar sua primeira pista, composta por peças de plástico na cor laranja de diferentes formatos. A pista acompanhava uma peça chamada Supercharger, uma pequena estação de serviço por onde os carrinhos passavam. Dentro desta estação havia rolamentos movidos a bateria que giravam e davam mais impulso para as rodas dos carrinhos, que continuavam correndo."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </ScrollView>
+
+</RelativeLayout>
